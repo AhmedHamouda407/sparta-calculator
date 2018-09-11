@@ -202,7 +202,7 @@ console.log('working');
        b=prompt('type another number you want to divide by')
        var result= Number(a) / Number(b)
        alert('The answer is ' + result)
-       var userinput = prompt('Would you like to add, subtract,divide or multiply using the basic calculator or just quit?')
+       var userinput = prompt("Would you like to 'add', 'subtract','divide' or 'multiply' using the basic calculator/ or use the advanced calculator to 'squareroot' a single number or find the 'power' of two numbers/ or just 'quit' ?")
      } else if (userinput === 'multiply'){
        c=prompt('type a number you want to begin multiplication with')
        d=prompt('type another number you want to multiply by')
@@ -226,6 +226,9 @@ console.log('working');
        k=prompt('type the second number')
        var result=Math.pow(j, k)
        alert('The answer is ' + result)
+     }else if (userinput !== "add" && userinput !== "subtract" && userinput !== "divide" && userinput !== "multiply" && userinput !== "quit" && userinput !== "power" && userinput !== "sqaureroot"){
+       userinput = prompt("Sorry invalid input, please enter either: add, subtract ,divide, multiply, power, sqaureroot, or quit")
+
      }
 
 
